@@ -83,6 +83,9 @@ Data is extracted from Compay's Datawarehouse
 
 The **occupancy percentage** (often called occ%) measures how many of the hotel's available rooms were actually sold and occupied.
 
-               occ%)} =  (Rooms Sold / Total Rooms Available) * 100
+               occ% =  (Rooms Sold / Total Rooms Available) * 100
 
-   
+ ===========================================
+
+**Data Exploration**
+  

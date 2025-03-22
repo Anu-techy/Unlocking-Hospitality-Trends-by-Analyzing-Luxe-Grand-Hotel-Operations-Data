@@ -22,12 +22,16 @@ Business Model
 
 Luxe is a 20 year old hotel chain which operates in four cities of India Delhi, Mumbai, Bangalore and Hyderabad.
 
-They have the following types of properties:
+They have the following types of properties under **Business** and **luxury** category:
 
-1. Luxe Grand Seasons (Business Category)
-2. Luxe Grand Exotica
-3. Luxe Grand Bay
-4. Luxe Grand Palace
+1. Luxe Grands 
+2. Luxe Exotica
+3. Luxe City
+4. Luxe Blu
+5. Luxe Bay
+6. Luxe Palace
+7. Luxe Seasons
+   
 
 The hotels have the following room categories:
    
@@ -44,8 +48,18 @@ Hotel bookings can be done from the company's website or 3rd party booking websi
 
 Data is extracted from Compay's Datawarehouse
 
-dim_date.csv
-dim_hotels.csv
+**dim_date.csv**           
+
+   Shape:  (92,4)    
+   Columns: date, mmmyy, weekno, day_type (weekday/weekend)
+   
+**dim_hotels.csv**
+
+   Shape:  (92,4)    
+   Columns: date, mmmyy, weekno, day_type (weekday/weekend)
+
+
+
 dim_rooms.csv
 fact_aggregated_bookings.csv
 fact_bookings.csv

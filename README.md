@@ -1,4 +1,4 @@
-# Unlocking-Hospitality-Trends-Data-Insights-into-Luxe-Grand-Hotel-Operations
+# Data Insights of Luxe Grand Hotel Operations
 
 
 start

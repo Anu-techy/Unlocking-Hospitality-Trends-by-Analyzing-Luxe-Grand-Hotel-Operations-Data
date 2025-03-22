@@ -1,8 +1,8 @@
-# Data Insights of Luxe Grand Hotel Operations
+# Data Insights of Luxe Hotel Operations
 
 **Aim:** 
 
-To conduct a thorough data analysis of Luxe Grand's operations data and stay competitive while making data-informed decisions
+To conduct a thorough data analysis of Luxe's operations data and stay competitive while making data-informed decisions
 
 **Steps**
 
@@ -20,23 +20,40 @@ Collecting insights
 
 Business Model
 
-Luxe Grand is a 20 year old hotel chain which operates in four cities of India Delhi, Mumbai, Bangalore and Hyderabad.
+Luxe is a 20 year old hotel chain which operates in four cities of India Delhi, Mumbai, Bangalore and Hyderabad.
 
-They have 
+They have the following types of properties:
 
 1. Luxe Grand Seasons (Business Category)
 2. Luxe Grand Exotica
 3. Luxe Grand Bay
 4. Luxe Grand Palace
 
-Room categories:
+The hotels have the following room categories:
    
 1. Standard
 2. Elite
 3. Premium
 4. Presidential
   
-Hotel bookings can be done from own website or 3rd party booking websites
-Data from Data warehouse
+Hotel bookings can be done from the company's website or 3rd party booking websites
+
+===========================================
+
+**Data Collection and Understanding**
+
+Data is extracted from Compay's Datawarehouse
+
+dim_date.csv
+dim_hotels.csv
+dim_rooms.csv
+fact_aggregated_bookings.csv
+fact_bookings.csv
+new_data_august.csv
+
+
+
+
+
 
    

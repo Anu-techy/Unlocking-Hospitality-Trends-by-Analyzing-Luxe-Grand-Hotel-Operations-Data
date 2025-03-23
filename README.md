@@ -118,9 +118,12 @@ Created a occ% column in df_agg_bookings
 
 **Insights Generation**
 
-
-
-
+1. occ% as per room_class
+2. Average occupancy rate per city
+3. Weekday vs Weekend Performance
+4. Occupancy in different cities in different months
+5. Revenue realized per city
+6. monthly revenue realized
 
 
 

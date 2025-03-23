@@ -124,6 +124,9 @@ Created a occ% column in df_agg_bookings
 4. Occupancy in different cities in different months
 5. Revenue realized per city
 6. monthly revenue realized
+7. Revenue realized per hotel type
+8. Average rating per city
+9. Revenue realized per booking platform
 
 
 

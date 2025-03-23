@@ -14,11 +14,11 @@ Data Cleaning and Exploration
 
 Data Transformation
 
-Collecting insights
+Insights Generation
 
 ===========================================================================
 
-Business Model
+**LUXE Business Model**
 
 Luxe is a 20 year old hotel chain which operates in four cities of India Delhi, Mumbai, Bangalore and Hyderabad.
 
@@ -94,12 +94,39 @@ The **occupancy percentage** (often called occ%) measures how many of the hotel'
 2. df_bookings["revenue_generated"].max() is in millions clearly suggesting presence of outliers in that column.
    Hence filtered 5 outliers whose values > mean + 3 * std
    
-3. Identified outliers in df_bookings["revenue_realized"] where the value > mean + 3 * std,
-   but the max doesnt look unreal or like outlier
-   checked there are 1299 rows of such values but they doesnt seem unreal ,further checking they fall under RT4 room category,
-   RT4 is presidential suit and the values look real/ appropriate
+3. Identified outliers in df_bookings["revenue_realized"] as per statistical method but didnot remove them as per the context.
+   Thorough analysis of this is attached in the file
 
-   further analysis of revenue_realized from RT4 rooms alone,
-   mean + 3 * std is 50583, hence the values are within the range, not outliers. No clelaning required for the columns.
+4. checked for null values using df_bookings.isnull().sum() and ratings_given  has 77897 null values.
+   People generally give review /ratings all the time, hence na handling not done for this column.
+
+5. 2 null values in capacity column, replaced with median
+
+6. Generally, the number of successful bookings <= room's capacity.But there are 6 records of that sort.
+   If you find rows where successful_bookings exceeds the capacity, it could indicate Data Quality Issue.
+   Hence filtered those rows.
+
+===================================================
+
+**Data Transformation**
+
+Created a occ% column in df_agg_bookings
+
+         occ% = (successful_booking/capacity) * 100
    
-  
+====================
+
+**Insights Generation**
+
+
+
+
+
+
+
+
+
+
+
+
+

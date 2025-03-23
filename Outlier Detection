@@ -1,0 +1,39 @@
+Done a thorough analysis of the "revenue_realized" column in df_bookings dataset, specifically checking for outliers. 
+
+Initial Outlier Detection:
+
+Identified rows where revenue_realized was greater than mean + 3 * std, which is a standard method for detecting outliers based on statistical thresholds.
+Found 1,299 such rows, which indicated that these values were flagged as outliers based on this threshold.
+
+Investigation of the Outliers:
+
+Despite being flagged as outliers, observed that the maximum value of "revenue_realized" didn't seem unreal or out of place.
+After further checking the room category for these flagged values, realized they all fell under the RT4 room category (presidential suites), 
+which seems reasonable in this context. 
+This suggests that these high values might not be outliers at all but rather a feature of this specific room category.
+
+Re-evaluation of Outliers within RT4:
+
+Conducted a more detailed analysis specifically for the RT4 room category, recalculating the mean and standard deviation for just those rows.
+Found that for RT4 rooms, the mean + 3 * std threshold was 50,583, and the flagged revenue_realized values were within this range.
+
+Conclusion:
+
+Since the values for revenue_realized within the RT4 category fall within the expected range (and no values appear unreal or inappropriate), 
+Concluded that there are no actual outliers.
+
+Therefore, no cleaning is required for this column, as the high values are valid and aligned with the characteristics of the RT4 rooms (presidential suites).
+
+Key Insights:
+
+Outlier detection methods like mean + 3 * std are useful, but they should be combined with domain knowledge to avoid misidentifying valid extreme values as outliers.
+
+In this case, the RT4 rooms naturally have higher revenue, and these values were not incorrect outliers but rather expected high revenue from that category.
+
+This type of analysis illustrates how important it is to understand the context of the data (in this case, the RT4 category) 
+before deciding to remove or adjust data points flagged as outliers.
+
+So, in summary, Correctly assessed that no cleaning is necessary, and the flagged rows are indeed legitimate given the context of the RT4 room category.
+
+
+

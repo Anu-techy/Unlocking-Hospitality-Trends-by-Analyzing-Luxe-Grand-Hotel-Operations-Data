@@ -6,15 +6,12 @@ To conduct a thorough data analysis of Luxe's operations data and stay competiti
 
 **Steps**
 
-Understanding Business problem
-
-Data Collection and Understanding
-
-Data Cleaning and Exploration
-
-Data Transformation
-
-Insights Generation
+           1. Understanding problem statement and Business Model
+           2. Data Collection and Understanding
+           3. Data Cleaning and Exploration
+           4. Data Transformation
+           5. Insights Generation
+           6. Recommendations
 
 ===========================================================================
 
@@ -127,12 +124,33 @@ Created a occ% column in df_agg_bookings
 7. Revenue realized per hotel type
 8. Average rating per city
 9. Revenue realized per booking platform
+===============================
+
+**Recommendations**
+
+1. Consider incentives for customers to book less popular room classes, such as discounts or value-added services.
+
+2. For cities with lower occupancy rates, focus on local partnerships with tourism boards or businesses to encourage more visitors.
+   launch targeted marketing campaigns or promotions in those cities to boost demand.
+
+3. Weekend occupancy is 30% more than weekdays occupancy. Offering discounts for weekday stays, 
+   Bundling services (e.g., free breakfast or spa vouchers) to entice weekday bookings.
+
+4. Consider dynamic pricing for weekends,peak seasons to increase revenue.
+
+5. Plan seasonal campaigns or events that attract tourists during off-peak months. For example, offer special deals or add experiences like local events or festivals.
+
+6. Consider expanding hotel capacity or improving services to increase revenue even further. 
+   You can also focus on premium room offerings or luxury upgrades.
+   Use the high revenue cities to cross-promote and offer deals to customers planning to visit cities with lower revenues.
+
+7. Review and optimize pricing strategies for low-revenue months to make them more competitive (e.g., offering deals or discounts).
+
+8. If specific hotel types aren't performing well or with lower ratings, review the amenities and services offered to make sure they meet customer expectations.
+   Timely quality control checks should be performed
+
+9. Diversify platform usage: If revenue heavily depends on a single platform, consider expanding your presence on multiple platforms to diversify your revenue streams and reduce 
+   dependency on any one source. Offer exclusive deals or early bird discounts on platforms that underperform to encourage more bookings.
 
 
-
-
-
-
-
-
-
+   

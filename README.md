@@ -87,5 +87,19 @@ The **occupancy percentage** (often called occ%) measures how many of the hotel'
 
  ===========================================
 
-**Data Exploration**
+**Data Cleaning**
+
+1. 12 records out of 134578 records have -ve no of guests, have been removed
+   
+2. df_bookings["revenue_generated"].max() is in millions clearly suggesting presence of outliers in that column.
+   Hence filtered 5 outliers whose values > mean + 3 * std
+   
+3. Identified outliers in df_bookings["revenue_realized"] where the value > mean + 3 * std,
+   but the max doesnt look unreal or like outlier
+   checked there are 1299 rows of such values but they doesnt seem unreal ,further checking they fall under RT4 room category,
+   RT4 is presidential suit and the values look real/ appropriate
+
+   further analysis of revenue_realized from RT4 rooms alone,
+   mean + 3 * std is 50583, hence the values are within the range, not outliers. No clelaning required for the columns.
+   
   
